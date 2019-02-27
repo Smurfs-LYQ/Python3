@@ -21,5 +21,3 @@ btn1.bind('<Button-3>',one)
 btn1.grid(row=0,column=0)
 
 root.mainloop()
-
-#测试一下可不可以
