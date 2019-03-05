@@ -66,7 +66,7 @@ def two(evt) :
     print('AAA')
 
 entry.bind('<KeyPress-a>',one)
-entry.bind('<Alt-KeyPress-A>',two)
+entry.bind('<Lock-KeyPress-A>',two)
 
 entry.grid()
 
