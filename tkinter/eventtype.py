@@ -61,12 +61,12 @@ btn1.grid(row=0,column=0)
 entry = Entry(root)
 
 def one(evt) :
-    print('r')
-def two(evt) :
     print('a')
+def two(evt) :
+    print('AAA')
 
-entry.bind('<KeyPress-r>',one)
-entry.bind('<Alt-KeyPress-a>',two)
+entry.bind('<KeyPress-a>',one)
+entry.bind('<Lock-KeyPress-A>',two)
 
 entry.grid()
 
