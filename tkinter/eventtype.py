@@ -21,6 +21,7 @@ def one(evt) :
 def two(evt) :
     print('右键')
 
+<<<<<<< HEAD
 def thr(evt) :
     print('中键')
 
@@ -45,6 +46,9 @@ def mouse_out(evt) :
 btn1.bind('<Enter>',mouse_in)
 # 鼠标离开
 btn1.bind('<Leave>',mouse_out)
+=======
+btn1.bind('<Button-3>',one)
+>>>>>>> 818b678995f806db56d219c7e4a18b88b999396c
 
 btn1.grid(row=0,column=0)
 
