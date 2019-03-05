@@ -62,6 +62,7 @@ entry = Entry(root)
 
 def one(evt) :
     print('a')
+    print(evt.widget)
 def two(evt) :
     print('AAA')
 
