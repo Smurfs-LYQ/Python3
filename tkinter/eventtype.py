@@ -66,6 +66,7 @@ def two(evt) :
     print('a')
 
 entry.bind('<KeyPress-r>',one)
+entry.bind('<Alt-KeyPress-a>',two)
 
 entry.grid()
 
