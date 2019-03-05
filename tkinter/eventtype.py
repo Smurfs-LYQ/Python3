@@ -11,6 +11,8 @@ root.title('事件绑定')
 
 root.minsize(300,300)
 
+# ---------------------------鼠标事件--------------------------- #
+"""
 # 鼠标点击操作
 '''
 btn1 = Button(root,text='按钮1')
@@ -21,7 +23,6 @@ def one(evt) :
 def two(evt) :
     print('右键')
 
-<<<<<<< HEAD
 def thr(evt) :
     print('中键')
 
@@ -33,23 +34,40 @@ btn1.bind('<Button-2>',two)
 btn1.bind('<Button-3>',thr)
 '''
 
-# 鼠标进入操作
+# 鼠标移入操作
+'''
 btn1 = Button(root,text = '按钮1')
 
 def mouse_in(evt) :
     print('鼠标进入')
+    btn1['bg'] = 'pack'
 
 def mouse_out(evt) :
     print('鼠标离开')
+    btn1['bg'] = 'white'
 
 # 鼠标进入
 btn1.bind('<Enter>',mouse_in)
 # 鼠标离开
 btn1.bind('<Leave>',mouse_out)
-=======
-btn1.bind('<Button-3>',one)
->>>>>>> 818b678995f806db56d219c7e4a18b88b999396c
+'''
 
 btn1.grid(row=0,column=0)
+"""
+
+# ---------------------------键盘事件--------------------------- #
+
+# 输入框 绑定操作
+entry = Entry(root)
+
+def one(evt) :
+    print('r')
+def two(evt) :
+    print('a')
+
+entry.bind('<KeyPress-r>',one)
+
+entry.grid()
+
 
 root.mainloop()
