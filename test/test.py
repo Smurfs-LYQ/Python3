@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
-import sys
+one = [1,4,2,67,3,6,89]
+res = []
 
-print('123',__name__)
+for i in one :
+    if res is not None :
+        pass
+    else :
+        res += [i]
+
+print(res)
